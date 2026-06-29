@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Renovables - Fuentes de Energía Sostenible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#16a34a',
+                        secondary: '#0ea5e9',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .scroll-smooth {
+                scroll-behavior: smooth;
+            }
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark scroll-smooth">
+    <!-- Encabezado y Navegación -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i class="fa fa-leaf text-primary text-2xl"></i>
+                <h1 class="text-[clamp(1.2rem,2vw,1.8rem)] font-bold text-primary">Energías Renovables</h1>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap gap-6 text-sm md:text-base font-medium">
+
+        <div class="flex items-center gap-2 mb-4 md:mb-0">
+            <i class="fa fa-leaf text-primary text-2xl"></i>
+            
+        </div>
+        <nav>
+            <ul class="flex flex-wrap gap-6 text-sm md:text-base font-medium">
+                <li><a href="#sobre-mi" class="hover:text-primary transition-colors">Sobre mí</a></li>
+                <li><a href="#inicio" class="hover:text-primary transition-colors">Inicio</a></li>
+                <li><a href="#tipos" class="hover:text-primary transition-colors">Tipos</a></li>
+                <li><a href="#ventajas" class="hover:text-primary transition-colors">Ventajas</a></li>
+                <li><a href="#desafios" class="hover:text-primary transition-colors">Desafíos</a></li>
+                <li><a href="#contacto" class="hover:text-primary transition-colors">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Contenido Sobre mí -->
+<section id="sobre-mi" class="py-10 bg-blue-50">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary">
+            <h2 class="text-2xl font-bold text-dark mb-4 flex items-center gap-2">
+                <i class="fa fa-user-circle text-secondary"></i> Mis gustos e intereses
+            </h2>
+            <p class="text-gray-700 mb-4">¡Hola! Antes de empezar con el tema de las energías renovables, te cuento un poco sobre mí:</p>
+            <ul class="space-y-3 text-gray-700 text-lg">
+                <li>🛌 Me gusta mucho dormir y descansar lo suficiente para tener energía todos los días.</li>
+                <li>🌱 Me interesa aprender sobre el cuidado del medio ambiente y las energías limpias.</li>
+                <li>📚 Disfruto leer y descubrir cosas nuevas sobre la naturaleza y la sostenibilidad.</li>
+                <li>🎧 Me relaja escuchar música y pasar tiempo tranquilo en casa.</li>
+                <li>🚶‍♂️ También me gusta salir a caminar y disfrutar de los espacios al aire libre.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección Principal / Portada -->
+    <section id="inicio" class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/portada.jpg" 
+                 alt="Paneles solares y molinos de viento en un paisaje verde" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-dark/50"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10 text-center text-white">
+            <h2 class="text-[clamp(2rem,5vw,4rem)] font-bold mb-4 text-shadow">Energía para un Futuro Sostenible</h2>
+            <p class="text-[clamp(1rem,2vw,1.3rem)] mb-8 max-w-3xl mx-auto">
+                Las energías renovables son fuentes de energía que se obtienen de recursos naturales inagotables: el sol, el viento, el agua, la tierra y la biomasa. Limpias, seguras y fundamentales para combatir el cambio climático.
+            </p>
+            <a href="#tipos" class="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
+                Conocer más
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección: ¿Qué son? -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">¿Qué son las energías renovables?</h2>
+                <p class="text-gray-600 text-lg">
+                    Son aquellas fuentes de energía que se regeneran de forma natural y a una velocidad superior a la que se consumen. A diferencia de los combustibles fósiles, no se agotan con el uso y su impacto ambiental es mucho menor, siendo clave para la transición energética mundial.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="order-2 md:order-1">
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary mt-1"></i>
+                            <span><strong>Inagotables:</strong> Provienen de procesos naturales continuos del planeta.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary mt-1"></i>
+                            <span><strong>Limpias:</strong> Generan muy pocas o ninguna emisión de gases de efecto invernadero.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary mt-1"></i>
+                            <span><strong>Descentralizadas:</strong> Pueden instalarse en zonas rurales o urbanas, acercando la energía a quien la necesita.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary mt-1"></i>
+                            <span><strong>Seguras:</strong> No presentan riesgos graves de accidentes ni dependen de importaciones de combustibles.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 rounded-xl overflow-hidden shadow-xl">
+                    <img src="img/definicion.jpg" 
+                         alt="Representación de energías renovables en la naturaleza" 
+                         class="w-full h-auto hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Tipos de Energías -->
+    <section id="tipos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-16">Tipos de Energías Renovables</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Energía Solar -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="img/solar.jpg" 
+                         alt="Paneles solares instalados" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Energía Solar</h3>
+                        <p class="text-gray-600 mb-4">Aprovecha la radiación del sol para generar electricidad (paneles fotovoltaicos) o calor (colectores solares). Es la fuente más accesible y abundante del planeta.</p>
+                        <div class="text-sm text-gray-500">
+                            <span class="font-semibold">Uso principal:</span> Viviendas, industrias, electrificación rural.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energía Eólica -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="img/eolica.jpg" 
+                         alt="Molinos de viento en campo abierto" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Energía Eólica</h3>
+                        <p class="text-gray-600 mb-4">Transforma la fuerza del viento en electricidad mediante aerogeneradores. Puede ser terrestre o marina, y es una de las tecnologías más maduras y eficientes.</p>
+                        <div class="text-sm text-gray-500">
+                            <span class="font-semibold">Uso principal:</span> Red eléctrica nacional, grandes parques eólicos.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energía Hidráulica -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="img/hidraulica.jpg" 
+                         alt="Represa hidroeléctrica" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Energía Hidráulica</h3>
+                        <p class="text-gray-600 mb-4">Utiliza la energía del agua en movimiento (ríos, presas, mareas) para mover turbinas. Es la fuente renovable más utilizada en el mundo actualmente por su gran capacidad.</p>
+                        <div class="text-sm text-gray-500">
+                            <span class="font-semibold">Uso principal:</span> Generación masiva, regulación de caudales.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energía Geotérmica -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="img/geotermica.jpg" 
+                         alt="Planta geotérmica" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Energía Geotérmica</h3>
+                        <p class="text-gray-600 mb-4">Aprovecha el calor interno de la Tierra, que sale a través de volcanes, géiseres o pozos profundos. Funciona las 24 horas y es muy estable en zonas con actividad geológica.</p>
+                        <div class="text-sm text-gray-500">
+                            <span class="font-semibold">Uso principal:</span> Calefacción, electricidad, aguas termales.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energía de la Biomasa -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="img/biomasa.jpg" 
+                         alt="Materiales orgánicos para biomasa" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Biomasa</h3>
+                        <p class="text-gray-600 mb-4">Usa materia orgánica (residuos agrícolas, forestales, estiércol, algas) para producir energía térmica o eléctrica. Ayuda además a gestionar residuos y reducir emisiones.</p>
+                        <div class="text-sm text-gray-500">
+                            <span class="font-semibold">Uso principal:</span> Calefacción, biocombustibles, electricidad.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energía Mareomotriz -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="img/mareomotriz.jpg" 
+                         alt="Dispositivos de energía mareomotriz" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Energía Mareomotriz</h3>
+                        <p class="text-gray-600 mb-4">Capta la energía de las mareas y corrientes marinas. Es muy predecible y constante, aunque su desarrollo tecnológico es más reciente que el de otras fuentes.</p>
+                        <div class="text-sm text-gray-500">
+                            <span class="font-semibold">Uso principal:</span> Zonas costeras, generación eléctrica estable.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas y Desafíos -->
+    <section id="ventajas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Ventajas -->
+                <div class="bg-green-50 p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                        <i class="fa fa-thumbs-up"></i> Ventajas
+                    </h3>
+                    <ul class="space-y-3 text-lg">
+                        <li>✅ Reducen drásticamente las emisiones de gases de efecto invernadero.</li>
+                        <li>✅ No se agotan: provienen de recursos naturales continuos.</li>
+                        <li>✅ Disminuyen la dependencia de combustibles importados y volátiles.</li>
+                        <li>✅ Generan empleo local y desarrollo tecnológico.</li>
+                        <li>✅ Mejoran la calidad del aire y protegen la salud pública.</li>
+                        <li>✅ Permiten llevar energía a zonas aisladas sin redes eléctricas.</li>
+                    </ul>
+                </div>
+
+                <!-- Desafíos -->
+                <div id="desafios" class="bg-amber-50 p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-600 mb-6 flex items-center gap-2">
+                        <i class="fa fa-exclamation-triangle"></i> Desafíos
+                    </h3>
+                    <ul class="space-y-3 text-lg">
+                        <li>🔹 Dependencia de las condiciones climáticas (sol, viento, lluvia).</li>
+                        <li>🔹 Costos iniciales de instalación aún elevados en algunos casos.</li>
+                        <li>🔹 Necesidad de mejorar sistemas de almacenamiento de energía.</li>
+                        <li>🔹 Impacto visual o ecológico en zonas donde se instalan grandes plantas.</li>
+                        <li>🔹 Requiere modernizar las redes eléctricas tradicionales.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Datos Interesantes -->
+    <section class="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-12">Datos Importantes</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <p class="text-4xl font-bold text-primary mb-2">28%</p>
+                    <p class="text-gray-600">De la electricidad mundial ya proviene de fuentes renovables.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <p class="text-4xl font-bold text-primary mb-2">+12M</p>
+                    <p class="text-gray-600">Empleos generados en todo el mundo por este sector.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <p class="text-4xl font-bold text-primary mb-2">90%</p>
+                    <p class="text-gray-600">De la nueva capacidad instalada es renovable cada año.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <p class="text-4xl font-bold text-primary mb-2">70%</p>
+                    <p class="text-gray-600">Reducción de emisiones frente a combustibles fósiles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-12">¿Quieres saber más?</h2>
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                <form class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="tucorreo@ejemplo.com">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-gray-700 font-medium mb-2">Mensaje o consulta</label>
+                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Escribe aquí tu pregunta o comentario..."></textarea>
+                    </div>
+                    <div class="md:col-span-2 text-center">
+                        <button type="submit" class="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-10 rounded-lg transition-all transform hover:scale-105 shadow-md">
+                            Enviar mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa fa-leaf text-primary text-2xl"></i>
+                        <h3 class="text-xl font-bold">Energías Renovables</h3>
+                    </div>
+                    <p class="text-gray-400">Información confiable y actualizada sobre las fuentes de energía que cuidan nuestro planeta y aseguran un futuro sostenible para todos.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Enlaces útiles</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#tipos" class="hover:text-white transition-colors">Tipos de energía</a></li>
+                        <li><a href="#ventajas" class="hover:text-white transition-colors">Ventajas y desafíos</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Síguenos</h4>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>© 2026 Energías Renovables | Todos los derechos reservados | Hecho por: Marely Gonzalez Perez</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
